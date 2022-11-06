@@ -2,18 +2,22 @@ public class Main
 {
     public static void main(String[] args)
     {
-        int Sum = 100;
-        int Money = 1100;
-        int Bonus = 100;
-        int BonusMoney = 0;
-        System.out.println("Счет абонента: " + Sum + " руб.");
-        System.out.println("Сумма пополнения: " + Money + " руб.");
-        if (Money >= 1000)
-            BonusMoney = Money / Bonus;
+        int sum = 100;
+        int money = 1100;
+        int bonus = 100;
+        int bonusMoney = 0;
+        System.out.println("Счет абонента: " + sum + " руб.");
+        System.out.println("Сумма пополнения: " + money + " руб.");
+        if (money > 1000)
+        {
+            bonusMoney = money / bonus;
+        }
         else
-            BonusMoney = 0;
-        Sum = Sum + Money + BonusMoney;
-        System.out.println("Начисленно бонусов: " + BonusMoney + " руб.");
-        System.out.println("Счет абонента: " + Sum + " руб.");
+        {
+            bonusMoney = 0;
+        }
+        sum = sum + money + bonusMoney;
+        System.out.println("Начисленно бонусов: " + bonusMoney + " руб.");
+        System.out.println("Счет абонента: " + sum + " руб.");
     }
 }
